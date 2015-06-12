@@ -46,30 +46,29 @@
 
 
     <script type="text/javascript">
-
         var selectorDelReporte = '.grid-stack';
 
-        $(function (selectorDelReporte) {
+        $(function(selectorDelReporte) {
             var options = {
                 float: true
             };
             $(selectorDelReporte).gridstack(options);
 
-           var reporte = new function () {
+            var reporte = new function() {
                 this.grid = $(selectorDelReporte).data('gridstack');
 
-                this.widgets = function(){
+                this.widgets = function() {
                     return $(selectorDelReporte).children;
                 }
 
-                this.add_new_widget = function () {
+                this.add_new_widget = function() {
                     var node = this.items.pop() || {
-                                x: 12 * Math.random(),
-                                y: 5 * Math.random(),
-                                width: 1 + 3 * Math.random(),
-                                height: 1 + 3 * Math.random()
-                            };
-                    this.grid.add_widget($('<div><div class="grid-stack-item-content" /> <span>+</span> <span>X</span> <div/>'),
+                        x: 12 * Math.random(),
+                        y: 5 * Math.random(),
+                        width: 1 + 3 * Math.random(),
+                        height: 1 + 3 * Math.random()
+                    };
+                    this.grid.add_widget($('<div><div class="grid-stack-item-content"/><span>+</span><span class="borrarWidget">X</span><div/>'),
                         node.x, node.y, node.width, node.height);
                 }.bind(this);
 
