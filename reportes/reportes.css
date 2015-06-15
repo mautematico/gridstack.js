@@ -1,0 +1,53 @@
+        body{
+                                background:rgb(200,200,200);
+        }
+
+        .grid-stack
+        {
+                background:white;
+                width:8in;
+                margin:auto;
+                min-height:5in;
+                max-height:11in;       
+                box-shadow: 5px 5px 10px #888888;
+                padding-bottom: 5mm;
+        }
+
+        .grid-stack-item-content
+        {
+                color:#2c3e50;
+                text-align:center;
+                
+                background-color:#18bc9c
+        }
+
+        .grid-stack-item-content nav
+        {
+                opacity:.1
+        }
+
+        .grid-stack-item-content nav:hover
+        {
+                opacity:.8
+        }
+
+        .grid-stack-item-content nav
+        {
+                font-size:24px;
+                text-align:right
+        }
+
+        .grid-stack-item-content i
+        {
+                margin-right:20px;
+                margin-top:20px
+        }
+    .objeto{
+                        z-index:-1;
+            background:red;
+            height: 100%;
+            top:0px;
+            position: absolute;
+            left: 0;
+            width: 100%;
+    }
